@@ -1,10 +1,11 @@
+import React from 'react';
 import App from '../App';
 
-describe('App()', () => {
+describe('<App />', () => {
   it('should print hello world', () => {
     const consoleSpy = jest.spyOn(console, 'log');
 
-    App();
+    <App />;
 
     expect(consoleSpy).toHaveBeenCalledWith('Hello world!');
   })

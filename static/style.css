@@ -93,6 +93,13 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+.literature-item__type {
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+}
+
 .literature-item__title {
     margin-bottom: 1.5rem;
     font-size: 180%;

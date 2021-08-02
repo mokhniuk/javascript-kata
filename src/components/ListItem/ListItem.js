@@ -6,12 +6,14 @@ const ListItem = ({item}) => {
 
   return(
     <li className="literature-item">
-      {item.publishedAt ? "magazine" : "book"}
+      <p className="literature-item__type">
+        {item.publishedAt ? "magazine" : "book"}
+      </p>
       <h3 className="literature-item__title">
         {item.title}
       </h3>
       <p className="literature-item__isbn">
-        {item.isbn}
+        ISBN: {item.isbn}
       </p>
       <p className="literature-item__authors">
         {item.authors}
@@ -22,7 +24,7 @@ const ListItem = ({item}) => {
           <time
             dateTime={item.publishedAt} pubdate="pubdate"
           >
-              {item.publishedAt}
+              Issued: {item.publishedAt}
           </time>
         </p>
       ) : (

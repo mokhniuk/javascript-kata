@@ -5,12 +5,12 @@ import ListItem from './components/ListItem/ListItem';
 
 import BOOKS_LIST from '../data/books.csv';
 import MAGAZINES_LIST from '../data/magazines.csv';
-import AUTHORS_LIST from '../data/authors.csv';
+// import AUTHORS_LIST from '../data/authors.csv';
 
 
 // TASKS
 // 
-// 1. Parse the data from the given CSV files in a meaningful structure.
+// +. Parse the data from the given CSV files in a meaningful structure.
 // +. Print out a merged list of books and magazines with all their details sorted by title.
 // +. Implement search:
 //    +. By isbn.
@@ -18,16 +18,7 @@ import AUTHORS_LIST from '../data/authors.csv';
 // 4. Add unit tests.
 // 
 
-
-
-
-// Parse data … ?
-
-// const books_reader = new FileReader(books_list);
-// const magazines_reader = new FileReader(magazines_list);
-// const authors_reader = new FileReader(authors_list);
-
-// Print sorted list
+// Parse data & print sorted list
 
 const BOOKS_AND_MAGAZINES_LIST = BOOKS_LIST.concat(MAGAZINES_LIST);
 // console.log(BOOKS_AND_MAGAZINES_LIST);
@@ -35,12 +26,14 @@ const BOOKS_AND_MAGAZINES_LIST = BOOKS_LIST.concat(MAGAZINES_LIST);
 const sortedLiteratureList = BOOKS_AND_MAGAZINES_LIST.sort((a, b) => a.title.localeCompare(b.title));
 // console.log(sortedLiteratureList);
 
+// TODO: replace authors emails with names from AUTHORS_LIST
+
 
 const App = () => {
-  // set input value
+  // Set input value
   const [ inputValue, setInputValue ] = useState('');
 
-  // set printed list
+  // Set printed list
   const [ printedList, setPrintedList ] = useState(sortedLiteratureList);
 
   // Handle search
