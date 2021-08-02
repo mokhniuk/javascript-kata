@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
     margin: 0;
     padding: 0;
 }
@@ -39,4 +38,76 @@ body {
     background: #222222;
     padding: 2px 4px;
     border-radius: 3px;
+}
+
+/* CUSTOM STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* main */
+
+.main {
+    margin: 0;
+    padding: 72px 5vw 5vh;
+}
+
+/* search */
+
+.search {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 1rem 5vw;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+}
+
+.search-input {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+/*  */
+
+.literature {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.literature-item {
+    display: block;
+    margin: 0;
+    padding: 2rem 0;
+}
+
+.literature-item:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.literature-item__title {
+    margin-bottom: 1.5rem;
+    font-size: 180%;
+}
+
+.literature-item__isbn {
+    margin-bottom: 0.5rem;
+}
+
+.literature-item__authors {
+    margin-bottom: 0.5rem;
+}
+
+.literature-item__pubdate {}
+
+.literature-item__description {
+    line-height: 1.4;
 }
